@@ -17,21 +17,25 @@ function media() {
     const resultadoAprovado = 'Aluno Aprovado'
     const resultadoReprovado = 'Aluno Reprovado'
 
-    if(situacao >=5){
-        document.getElementById('situacao').value = resultadoAprovado 
-        formulario.classList.remove('sombra-vermelha')
-        formulario.classList.add('sombra-verde')
+    if(situacao >= 5){
+        document.getElementById('situacao').value = resultadoAprovado
+        formulario.classList.remove('sombraVermelha')
+        formulario.classList.add('sombraVerde')
 
     }else {
         document.getElementById('situacao').value = resultadoReprovado
-        formulario.classList.add('sombra-verde')
-        formulario.classList.remove('sombra-vermelha')
+        formulario.classList.add('sombraVermelha')
+        formulario.classList.remove('sombraVerde')
 
         
     }
 }
 
 calcular.addEventListener('click', media)
+
+
+
+
 
 /*
 const calcular = document.getElementById('calcular')
